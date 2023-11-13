@@ -15,18 +15,26 @@
     <link rel="stylesheet" href="../Landing-page/assets/css/style.css">
 </head>
 
-<body class="main-img">
+<body>
+    <input id="close-menu" class="close-menu" 
+    type="checkbox" aria-label="Close menu" 
+    role="button">
+    <label class="close-menu-label" for="close-menu" 
+    title="close menu"></label>
     <aside class="menu white-img">
         <div class="main-content menu-content">
-            <h1><a href="#home">LOGO</a></h1>
+            <h1 onclick="getElementById('close-menu')
+            .checked = false;"><a href="#home">LOGO</a></h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu')
+                .checked = false;">
                     <li><a href="#principal">Introdução</a></li>
                     <li><a href="#grid-one">Curiosidades</a></li>
-                    <!-- <li><a href="#grid-one">Nossa Empresa</a></li> -->
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#galelery">Galeria</a></li>
+                    <li><a href="#grid-two">Nossa Empresa</a></li>
+                    <li><a href="#pricing">Consulta De Valores</a></li>
+                    <li><a href="#contract">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,32 +86,202 @@
                 <article>
                     <h3>Texto 1</h3>
                     <p>Apenas 5% de todo varejo brasileiro realizava vendas por meios digitais até o surgimento da
-                    Covid-19
-                    e a expectativa é que esse número pelo menos dobre até o final do ano de 2023.</p>
+                        Covid-19
+                        e a expectativa é que esse número pelo menos dobre até o final do ano de 2023.</p>
                 </article>
 
                 <article>
                     <h3>Texto 2</h3>
                     <p>Para quem gosta de enxergar sob a ótica do copo meio vazio pode até pensar que o número é muito
-                    baixo, mas sob uma perspectiva mais otimista o fato é que ainda há um mar imenso de
-                    oportunidades
-                    pela frente, afinal, o Brasil está apenas no início da jornada de digitalização.</p>
+                        baixo, mas sob uma perspectiva mais otimista o fato é que ainda há um mar imenso de
+                        oportunidades
+                        pela frente, afinal, o Brasil está apenas no início da jornada de digitalização.</p>
                 </article>
 
                 <article>
                     <h3>Texto 3</h3>
-                    <p>O mundo digital oferece uma oportunidade incrível para o varejo saber mais sobre o seu cliente.</p>
+                    <p>O mundo digital oferece uma oportunidade incrível para o varejo saber mais sobre o seu cliente.
+                    </p>
                 </article>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="section white-img">
-        <div class="main-content">
-            <h1>Teste</h1>
+    <section id="galelery" class="grid-one white-img section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Galeria</h2>
+            <p class="grid-description">Uma breve descrição.</p>
+
+            <div class="grid">
+                <div class="galelery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="gerando uma imagem randomica">
+                </div>
+
+                <div class="galelery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=2" alt="gerando uma imagem randomica">
+                </div>
+
+                <div class="galelery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=3" alt="gerando uma imagem randomica">
+                </div>
+
+                <div class="galelery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=4" alt="gerando uma imagem randomica">
+                </div>
+
+                <div class="galelery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=5" alt="gerando uma imagem randomica">
+                </div>
+
+                <div class="galelery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=6" alt="gerando uma imagem randomica">
+                </div>
+            </div>
         </div>
     </section>
 
+    <section id="grid-two" class="grid-one main-img section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Nossa Empresa</h2>
+            <p class="grid-description">Uma breve descrição.</p>
+
+            <div class="grid">
+                <article>
+                    <h3>Texto 1</h3>
+                    <p>Apenas 5% de todo varejo brasileiro realizava vendas por meios digitais até o surgimento da
+                        Covid-19
+                        e a expectativa é que esse número pelo menos dobre até o final do ano de 2023.</p>
+                </article>
+
+                <article>
+                    <h3>Texto 2</h3>
+                    <p>Para quem gosta de enxergar sob a ótica do copo meio vazio pode até pensar que o número é muito
+                        baixo, mas sob uma perspectiva mais otimista o fato é que ainda há um mar imenso de
+                        oportunidades
+                        pela frente, afinal, o Brasil está apenas no início da jornada de digitalização.</p>
+                </article>
+
+                <article>
+                    <h3>Texto 3</h3>
+                    <p>O mundo digital oferece uma oportunidade incrível para o varejo saber mais sobre o seu cliente.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="white-img section">
+        <div class="main-content principal-content">
+            <h2>Preço</h2>
+            <p>O comércio eletrônico foi, sem dúvidas, um dos setores que mais cresceu durante a pandemia. Nesses
+            últimos dois anos, milhões de pessoas que, até então nunca tinham feito um único pedido online, tiveram
+            a primeira experiência de comprar um produto ou pedir uma refeição pela internet.</p>
+
+            
+
+            <div class="responsive-table"></div>
+
+            <table>
+                <caption>Tabela De Valores</caption>
+
+                <thead>
+                    <tr>
+                        <th>Titulo 1</th>
+                        <th>Titulo 2</th>
+                        <th>Titulo 3</th>
+                        <th>Titulo 4</th>
+                        <th>Titulo 5</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Conteudo 1</td>
+                        <td>Conteudo 2</td>
+                        <td>Conteudo 3</td>
+                        <td>Conteudo 4</td>
+                        <td>Conteudo 5</td>
+                    </tr>
+                    <tr>
+                        <td>Conteudo 1</td>
+                        <td>Conteudo 2</td>
+                        <td>Conteudo 3</td>
+                        <td>Conteudo 4</td>
+                        <td>Conteudo 5</td>
+                    </tr>
+                    <tr>
+                        <td>Conteudo 1</td>
+                        <td>Conteudo 2</td>
+                        <td>Conteudo 3</td>
+                        <td>Conteudo 4</td>
+                        <td>Conteudo 5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Testando</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <section id="contract" class="introducao main-img section">
+        <div class="main-content introducao-content">
+            <div class="introducao-text">
+                <h2>Contatos</h2>
+                <p>É evidente que as compras online proporcionaram aos consumidores mais opções do que nunca, oferecendo
+                uma conveniência notável com apenas alguns cliques de um botão. Mas há um problema.</p>
+            </div>
+            <div class="introducao-img">
+                <img src="assets/img/img-contact.svg" alt="Logo Contatos">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Informe Contato</legend>
+
+                    <div class="form-grup">
+                        <label for="first-name">Primeiro Nome</label>
+                        <input type="text" name="first-name" id="first-name"
+                        placeholder="primeiro nome">
+                    </div>
+
+                    <div class="form-grup">
+                        <label for="last-name">Ultimo Nome</label>
+                        <input type="text" name="last-name" id="last-name"
+                        placeholder="ultimo nome">
+                    </div>
+
+                    <div class="form-grup">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email"
+                        placeholder="email">
+                    </div>
+
+                    <div class="form-grup full-width">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                    </div>
+
+                    <div class="form-grup full-width">
+                        <button type="submit">Enviar Mensagem</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer white-img">
+        <p><a href="#" target="_blank">
+            Feito com com  <span class="figure">❤</span>por Lucas Rocha Caixeta
+        </p></a>
+    </footer>
+
+    <a class="back-to" href="#home"></a>
 </body>
 
 </html>
