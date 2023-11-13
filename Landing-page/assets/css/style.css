@@ -1,0 +1,81 @@
+.introducao-content {
+    position: relative;
+    top: -6rem;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.introducao-text, .introducao-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.introducao-text p {
+    color: rgb(240, 240, 240);
+}
+
+.introducao-img img
+.introducao-img svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.principal-content {
+    /* max-width: 2.8rem; */
+    display: flex;
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.introducao-img img {
+    margin-top: 20%;
+    height: 60%;
+    text-align: center;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counnter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counnter;
+    content: counter(grid-counnter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
